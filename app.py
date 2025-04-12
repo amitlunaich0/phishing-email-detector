@@ -3,15 +3,15 @@ import re
 
 # Suspicious keywords often found in phishing emails
 phishing_keywords = [
-    "urgent", "verify", "click here", "login", "password",
-    "bank", "account", "security alert", "update", "reset",
+    "urgent", "verify", "click here", "password", "immediate",
+    "instagram", "facebook", "security alert", "update", "reset",
     "confirm", "limited time", "suspended", "billing"
 ]
 
 # Common fake or throwaway domains
 fake_domains = [
     "mailinator.com", "tempmail.com", "10minutemail.com", "fakeinbox.com",
-    "sharklasers.com", "guerrillamail.com", "dispostable.com"
+    "sharklasers.com", "guerrillamail.com", "dispostable.com","login.com", "fake.com"
 ]
 
 # Function to check if the email is suspicious

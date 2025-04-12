@@ -2,7 +2,7 @@ import streamlit as st
 import re
     
     # Suspicious keywords often found in phishing emails
-    phishing_keywords = [
+phishing_keywords = [
     "urgent", "verify", "click here", "login", "password",
     "bank", "account", "security alert", "update", "reset",
     "confirm", "limited time", "suspended", "billing"

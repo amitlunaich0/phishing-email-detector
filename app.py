@@ -47,10 +47,13 @@ if st.button("Scan Email"):
     is_phish, matched_keywords = detect_phishing(subject, body)
 
     st.subheader("🔍 Scan Results")
-
     # Email check
     st.markdown("**Email Address Check:**")
-    st.info(email_msg) if is_valid_email else st.warning(email_msg)
+    if is_valid_email:
+        st.info(email_msg)
+    else:
+        st.warning(email_msg)
+
 
     # Phishing content check
     st.markdown("**Content Analysis:**")

@@ -49,10 +49,10 @@ def detect_phishing(subject, body):
          st.subheader("🔍 Scan Results")
     # Email check
         st.markdown("**Email Address Check:**")
-        if is_valid_email:
-           st.info(email_msg)
-        else:
-           st.warning(email_msg)
+         if is_valid_email:
+             st.info(email_msg)
+         else:
+             st.warning(email_msg)
     
     
     # Phishing content check

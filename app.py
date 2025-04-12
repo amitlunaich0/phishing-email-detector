@@ -9,13 +9,13 @@ phishing_keywords = [
     ]
     
     # Common fake or throwaway domains
-    fake_domains = [
+fake_domains = [
     "mailinator.com", "tempmail.com", "10minutemail.com", "fakeinbox.com",
     "sharklasers.com", "guerrillamail.com", "dispostable.com"
     ]
     
     # Function to check if the email is suspicious
-    def check_email_validity(email):
+def check_email_validity(email):
     pattern = r"[^@]+@[^@]+\.[^@]+"  # Basic email regex
     if not re.match(pattern, email):
         return False, "❌ Invalid email format"
@@ -27,7 +27,7 @@ phishing_keywords = [
     return True, "✅ Email format and domain look okay"
     
     # Function to detect phishing content
-    def detect_phishing(subject, body):
+def detect_phishing(subject, body):
              full_text = (subject + " " + body).lower()
     detected = [word for word in phishing_keywords if word in full_text]
     return len(detected) >= 2, detected

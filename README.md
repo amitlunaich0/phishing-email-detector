@@ -51,43 +51,6 @@ Streamlit Cloud	For public deployment
 (Add your screenshot here)
 📸 A preview of the phishing detection interface.
 
-📂 Project Structure
-bash
-Copy
-Edit
-phishing-email-detector/
-│
-├── app.py                # Main Streamlit app
-├── requirements.txt      # Required libraries
-├── README.md             # Project info
-├── DejaVuSans.ttf        # Emoji-friendly font (for PDF)
-└── generate_pdf.py       # PDF export with emoji support
-▶️ Run Locally
-bash
-Copy
-Edit
-# Clone the repo
-git clone https://github.com/your-username/phishing-email-detector.git
-cd phishing-email-detector
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Streamlit app
-streamlit run app.py
-☁️ Deploy Publicly
-Use Streamlit Cloud:
-
-Push your code to a GitHub repo
-
-Go to share.streamlit.io
-
-Connect your GitHub account
-
-Deploy the app from the app.py file
-
-Done! 🎉
-
 📌 Future Scope
 Add Machine Learning model for better accuracy
 
@@ -98,7 +61,7 @@ Use email reputation APIs
 Add user login + log history
 
 🙏 Credits
-Built by Your Name
+Built by Amit Lunaich
 
 Inspired by common phishing detection needs in cybersecurity awareness
 

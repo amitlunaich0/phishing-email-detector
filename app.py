@@ -1,5 +1,5 @@
-    import streamlit as st
-    import re
+import streamlit as st
+import re
     
     # Suspicious keywords often found in phishing emails
     phishing_keywords = [

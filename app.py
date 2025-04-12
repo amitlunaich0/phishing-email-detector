@@ -28,7 +28,7 @@ def check_email_validity(email):
     
     # Function to detect phishing content
 def detect_phishing(subject, body):
-             full_text = (subject + " " + body).lower()
+    full_text = (subject + " " + body).lower()
     detected = [word for word in phishing_keywords if word in full_text]
     return len(detected) >= 2, detected
     

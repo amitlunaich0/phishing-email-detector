@@ -43,16 +43,16 @@ def detect_phishing(subject, body):
     body = st.text_area("Email Body")
     
     if st.button("Scan Email"):
-    is_valid_email, email_msg = check_email_validity(email)
-    is_phish, matched_keywords = detect_phishing(subject, body)
+         is_valid_email, email_msg = check_email_validity(email)
+         is_phish, matched_keywords = detect_phishing(subject, body)
     
-    st.subheader("🔍 Scan Results")
+         st.subheader("🔍 Scan Results")
     # Email check
-    st.markdown("**Email Address Check:**")
-    if is_valid_email:
-        st.info(email_msg)
-    else:
-        st.warning(email_msg)
+        st.markdown("**Email Address Check:**")
+        if is_valid_email:
+           st.info(email_msg)
+        else:
+           st.warning(email_msg)
     
     
     # Phishing content check
